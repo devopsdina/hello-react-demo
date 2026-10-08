@@ -1,113 +1,19 @@
 {
-  "files": [],
   "compilerOptions": {
-    "resolveJsonModule": true
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
-  "references": [
-    {
-      "path": "./packages/shared/common/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/shared/sdk-client/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/shared/sdk-server/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/shared/sdk-server-edge/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/shared/akamai-edgeworker-sdk/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/shared/openfeature-server-common/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/shared/eventsource/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/server-node/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/cloudflare/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/react-native/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/vercel/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/akamai-edgekv/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/akamai-base/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/svelte/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/vue/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/store/node-server-sdk-redis/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/store/node-server-sdk-dynamodb/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/telemetry/node-server-sdk-otel/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/tooling/client-testing-plugin/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/tooling/jest/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/tooling/contract-test-utils/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/browser/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/browser/contract-tests/entity/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/server-ai/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/fastly/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/server-node/contract-tests/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/ai-providers/server-ai-langchain/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/ai-providers/server-ai-openai/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/ai-providers/server-ai-vercel/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/shopify-oxygen/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/electron/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/react/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/openfeature-node-server/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/openfeature-cloudflare-server/tsconfig.ref.json"
-    },
-    {
-      "path": "./packages/sdk/node-client/tsconfig.ref.json"
-    }
-  ]
+  "include": ["src", "vite.config.ts"]
 }

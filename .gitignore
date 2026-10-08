@@ -1,32 +1,25 @@
-package-lock.json
-yarn.lock
-dist/
-node_modules/
-**/*.tsbuildinfo
-**/*.rollup.cache
-coverage/
-**/tmp_test/
-docs/
-.pnp.*
-**/.yarn/*
-.dev*
-.vscode/launch.json
-.idea
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-yarn-error.log
-.DS_Store
-.vscode
-dump.rdb
-.wrangler
-stats.html
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Environment files
-.env
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/dist
+
+# misc
+.DS_Store
 .env.local
-.env.*.local
-.claude/worktrees
-.claude/tmp
-.mcp.json
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+test-results/
+/playwright-report

@@ -1,5 +1,0 @@
-{
-  "extends": ["../../../typedoc.base.json"],
-  "entryPoints": ["src/react-native/index.ts", "src/react/index.ts"],
-  "out": "docs"
-}
