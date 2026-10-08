@@ -21,16 +21,20 @@ function App() {
   }
 
   const ready = status !== 'initializing';
-  const headerBgColor = ready && flagValue ? '#00844B' : '#373841';
+  // Only show the flag result once the SDK has initialized. If initialization
+  // fails, the SDK may still return values cached from an earlier session.
+  const initialized = status === 'complete';
+  const flagOn = initialized && flagValue;
+  const headerBgColor = flagOn ? '#00844B' : '#373841';
 
   return (
     <div className="App">
       <header className="App-header" style={{ backgroundColor: headerBgColor }}>
         {ready && (
           <>
-            {flagValue && <Osmo className="App-osmo" />}
+            {flagOn && <Osmo className="App-osmo" />}
             <p>{statusMessage}</p>
-            <p>{`The ${FLAG_KEY} feature flag evaluates to ${flagValue}.`}</p>
+            {initialized && <p>{`The ${FLAG_KEY} feature flag evaluates to ${flagValue}.`}</p>}
           </>
         )}
       </header>
