@@ -36,15 +36,9 @@ This demo requires Node.js v20.19 or later.
 
    Otherwise, `sample-feature-dtm` will be used by default.
 
-3. Optional: if your client-side ID belongs to LaunchDarkly **staging**, add this to `.env`:
+   Never commit your client-side ID. `.env` is git-ignored.
 
-   ```
-   LAUNCHDARKLY_STG=true
-   ```
-
-   When it's unset or anything other than `true`, the app connects to production LaunchDarkly.
-
-4. Install dependencies and start the app:
+3. Install dependencies and start the app:
 
    ```bash
    npm install && npm start
